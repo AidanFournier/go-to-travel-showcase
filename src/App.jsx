@@ -1,7 +1,19 @@
+import styles from './styles/Global';
+import { HeroTori } from "./assets";
+
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Hello Go To Travel</h1>
+    <div className={`${styles.bgBlue} ${styles.section} w-screen h-screen`}>
+      <div className={`${styles.bgWhite} w-full h-full rounded-[32px] shadow-2xl flex justify-between`}>
+        <div>Hello</div>
+        <div className="h-full w-[65%]">
+          <img 
+            src={HeroTori}
+            alt="Hero image of red tori gate"
+            className={styles.fullImg}
+          />
+        </div>
+      </div>
     </div>
   )
 }

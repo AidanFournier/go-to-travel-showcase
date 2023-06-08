@@ -4,6 +4,8 @@ const styles = {
   
     bgWhite: "bg-white",
     bgPrimary: "bg-primary",
+
+    bgBlue: "bg-[#336699]",
   
     boxClass: "flex-row md:flex-col",
     boxReverseClass: "flex-row-reverse md:flex-col-reverse",
@@ -24,14 +26,14 @@ const styles = {
     btnBlack:
       "bg-black flex items-center py-2 px-4 rounded-md mt-2 w-fit cursor-pointer",
   
-    section: "flex justify-center items-center p-16 sm:p-8",
+    section: "flex justify-center items-center sm:p-4",
     subSection: "flex items-center w-full minmd:w-3/4",
     descDiv: "flex-1 w-full flex justify-start flex-col md:mb-10 ",
   
     flexCenter: "flex justify-center items-center",
     flexWrap: "flex justify-center flex-wrap",
   
-    fullImg: "w-full h-full object-cover",
+    fullImg: "w-full h-full object-cover rounded-r-[28px]",
     sectionImg: "w-full h-full minmd:w-11/12 minmd:h-11/12 object-contain",
     btnIcon: "w-5 h-5 minmd:w-10 minmd:h-10 object-contain",
   
