@@ -1,6 +1,7 @@
 const styles = {
     whiteText: "text-white",
     blackText: "text-tertiary",
+    blueText: "text-[#336699]",
   
     bgWhite: "bg-white",
     bgPrimary: "bg-primary",
