@@ -1,5 +1,8 @@
+// import { Component } from "react";
+import ReactCardCarousel from "react-card-carousel";
+
 import styles from './styles/Global';
-import { HeroTori } from "./assets";
+import { AttractionsIcon, HeroTori, HotelsIcon, RestaurantsIcon } from "./assets";
 
 const App = () => {
   return (
@@ -17,15 +20,40 @@ const App = () => {
             <div className={`text-xl font-bold tracking-medium ${styles.blueText}`}>To Travel</div>
           </div>
 
-          <div className={`mx-8 font-bold text-3xl ${styles.blueText}`}>
-            <h2>
-              Explore Japan.
-            </h2>
-            <h2>
-              On your own schedule.
-            </h2>
+          {/* Tagline */}
+          <div className={`mx-8 mb-40 font-bold text-3xl ${styles.blueText}`}>
+            <h2>Explore Japan.</h2>
+            <h2>On your own schedule.</h2>
           </div>
 
+          {/* Features Carousel */}
+          <div>
+            <div className={styles.carouselContainer}>
+              <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
+                <div className={styles.cardStyle}>
+                  <img 
+                    src={HotelsIcon} 
+                    alt="Hotels"
+                    className={styles.iconImg}
+                  />
+                </div>
+                <div className={styles.cardStyle}>
+                  <img 
+                    src={AttractionsIcon} 
+                    alt="Attractions"
+                    className={styles.iconImg}
+                  />
+                </div>
+                <div className={styles.cardStyle}>
+                  <img 
+                    src={RestaurantsIcon} 
+                    alt="Restaurants"
+                    className={styles.iconImg}
+                  />
+                </div>
+              </ReactCardCarousel>
+            </div>
+          </div>
 
         </div>
         

@@ -26,7 +26,14 @@ const styles = {
       "bg-primary mt-4 py-4 px-6 text-white text-lg minmd:text-2xl font-IBMPlex font-medium rounded-lg hover:shadow-2xl",
     btnBlack:
       "bg-black flex items-center py-2 px-4 rounded-md mt-2 w-fit cursor-pointer",
-  
+
+    carouselContainer:
+      "relative h-full w-full justify-center items-center",
+    cardStyle:
+      "h-[150px] w-[150px] bg-[#2898DC] text-white rounded-2xl overflow-hidden flex justify-center items-center",
+    iconImg:
+      "p-4",
+    
     section: "flex justify-center items-center sm:p-4",
     subSection: "flex items-center w-full minmd:w-3/4",
     descDiv: "flex-1 w-full flex justify-start flex-col md:mb-10 ",
