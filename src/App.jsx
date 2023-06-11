@@ -10,7 +10,7 @@ const App = () => {
       <div className={`${styles.bgWhite} w-full h-full rounded-[32px] shadow-2xl flex justify-between`}>
 
         {/* Left side panel */}
-        <div className="flex-row justify-start items-center p-6">
+        <div className="flex-row justify-center items-center p-6 grow">
 
           {/* Logo */}
           <div className='flex justify-start items-center space-x-2 mb-28'>
@@ -21,42 +21,43 @@ const App = () => {
           </div>
 
           {/* Tagline */}
-          <div className={`mx-8 mb-40 font-bold text-3xl ${styles.blueText}`}>
-            <h2>Explore Japan.</h2>
-            <h2>On your own schedule.</h2>
-          </div>
-
-          {/* Features Carousel */}
-          <div>
-            <div className={styles.carouselContainer}>
-              <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
-                <div className={styles.cardStyle}>
-                  <img 
-                    src={HotelsIcon} 
-                    alt="Hotels"
-                    className={styles.iconImg}
-                  />
-                </div>
-                <div className={styles.cardStyle}>
-                  <img 
-                    src={AttractionsIcon} 
-                    alt="Attractions"
-                    className={styles.iconImg}
-                  />
-                </div>
-                <div className={styles.cardStyle}>
-                  <img 
-                    src={RestaurantsIcon} 
-                    alt="Restaurants"
-                    className={styles.iconImg}
-                  />
-                </div>
-              </ReactCardCarousel>
+          {/* <div className='flex-row justify-center items-center'> */}
+            <div className={`mb-28 font-bold text-2xl flex-row grow justify-center items-center text-center ${styles.blueText}`}>
+              <h2>Explore Japan.</h2>
+              <h2>On your own schedule.</h2>
             </div>
-          </div>
 
+            {/* Features Carousel */}
+            <div>
+              <div className={styles.carouselContainer}>
+                <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
+                  <div className={styles.cardStyle}>
+                    <img 
+                      src={HotelsIcon} 
+                      alt="Hotels"
+                      className={styles.iconImg}
+                    />
+                  </div>
+                  <div className={styles.cardStyle}>
+                    <img 
+                      src={AttractionsIcon} 
+                      alt="Attractions"
+                      className={styles.iconImg}
+                    />
+                  </div>
+                  <div className={styles.cardStyle}>
+                    <img 
+                      src={RestaurantsIcon} 
+                      alt="Restaurants"
+                      className={styles.iconImg}
+                    />
+                  </div>
+                </ReactCardCarousel>
+              </div>
+            </div>
+
+          {/* </div> */}
         </div>
-        
 
 
         {/* Hero Img */}

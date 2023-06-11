@@ -30,7 +30,7 @@ const styles = {
     carouselContainer:
       "relative h-full w-full justify-center items-center",
     cardStyle:
-      "h-[150px] w-[150px] bg-[#2898DC] text-white rounded-2xl overflow-hidden flex justify-center items-center",
+      "h-[7rem] w-[7rem] bg-[#2898DC] text-white rounded-2xl overflow-hidden flex justify-center items-center",
     iconImg:
       "p-4",
     
