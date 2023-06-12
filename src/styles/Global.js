@@ -28,7 +28,7 @@ const styles = {
       "bg-black flex items-center py-2 px-4 rounded-md mt-2 w-fit cursor-pointer",
 
     carouselContainer:
-      "relative h-full w-full justify-center items-center",
+      "relative justify-center items-center",
     cardStyle:
       "h-[7rem] w-[7rem] bg-[#2898DC] text-white rounded-2xl overflow-hidden flex justify-center items-center",
     iconImg:
