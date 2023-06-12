@@ -1,8 +1,7 @@
-// import { Component } from "react";
 import ReactCardCarousel from "react-card-carousel";
 
 import styles from './styles/Global';
-import { AttractionsIcon, HeroTori, HotelsIcon, RestaurantsIcon } from "./assets";
+import { AttractionsIcon, HeroTori, HotelsIcon, RestaurantsIcon, ExpoIcon, GitHubIcon, QRCode } from "./assets";
 
 const App = () => {
   return (
@@ -10,10 +9,10 @@ const App = () => {
       <div className={`${styles.bgWhite} w-full h-full rounded-[32px] shadow-2xl flex justify-between`}>
 
         {/* Left side panel */}
-        <div className="flex-row justify-start items-center p-6">
+        <div className="w-[35%] flex-row justify-center items-center p-6 grow">
 
           {/* Logo */}
-          <div className='flex justify-start items-center space-x-2 mb-28'>
+          <div className='flex justify-start items-center space-x-2 mb-24'>
             <div className={`${styles.bgBlue} w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-tr from-[#5CA7F1] from-10% to-[#336699] to-90%`}>
               <h1 className='text-white text-xl tracking-wide font-medium'>Go</h1>
             </div>
@@ -21,44 +20,76 @@ const App = () => {
           </div>
 
           {/* Tagline */}
-          <div className={`mx-8 mb-40 font-bold text-3xl ${styles.blueText}`}>
+          <div className={`mb-28 font-bold text-2xl flex-row grow justify-center items-center text-center ${styles.blueText}`}>
             <h2>Explore Japan.</h2>
-            <h2>On your own schedule.</h2>
+            <h2>At your own pace.</h2>
           </div>
 
           {/* Features Carousel */}
-          <div>
-            <div className={styles.carouselContainer}>
-              <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
-                <div className={styles.cardStyle}>
-                  <img 
-                    src={HotelsIcon} 
-                    alt="Hotels"
-                    className={styles.iconImg}
-                  />
-                </div>
-                <div className={styles.cardStyle}>
-                  <img 
-                    src={AttractionsIcon} 
-                    alt="Attractions"
-                    className={styles.iconImg}
-                  />
-                </div>
-                <div className={styles.cardStyle}>
-                  <img 
-                    src={RestaurantsIcon} 
-                    alt="Restaurants"
-                    className={styles.iconImg}
-                  />
-                </div>
-              </ReactCardCarousel>
+          <div className={styles.carouselContainer}>
+            <ReactCardCarousel autoplay={true} autoplay_speed={3000}>
+              <div className={styles.cardStyle}>
+                <img 
+                  src={HotelsIcon} 
+                  alt="Hotels"
+                  className={styles.iconImg}
+                />
+              </div>
+              <div className={styles.cardStyle}>
+                <img 
+                  src={AttractionsIcon} 
+                  alt="Attractions"
+                  className={styles.iconImg}
+                />
+              </div>
+              <div className={styles.cardStyle}>
+                <img 
+                  src={RestaurantsIcon} 
+                  alt="Restaurants"
+                  className={styles.iconImg}
+                />
+              </div>
+            </ReactCardCarousel>
+          </div>
+
+          {/* CTA */}
+          <div className="mt-[14rem] flex justify-center items-center space-x-3 ">
+            <div 
+              className="bg-black flex items-center py-2 px-4 rounded-md mt-2 w-fit cursor-pointer hover:shadow-lg"
+              onClick={() => window.open("https://expo.dev/@aidoufou/go-to-travel?serviceType=classic&distribution=expo-go", "_blank")}
+            >
+              <img src={ExpoIcon} alt="expo-icon" className={styles.btnIcon} />
+              <div className="flex flex-col justify-start ml-4">
+                <p className={`${styles.btnText} font-normal text-[12px]`}>View it on</p>
+                <p className={`${styles.btnText} font-bold text-[14px]`}>Expo Store</p>
+              </div>
             </div>
+            <div 
+              className="bg-black flex items-center py-2 px-4 rounded-md mt-2 w-fit cursor-pointer space-x-2 hover:shadow-lg"
+              onClick={() => window.open("https://github.com/AidanFournier/go-to-travel", "_blank")}
+            >
+              <img src={GitHubIcon} alt="expo-icon" className={`${styles.btnIcon} h-[30px] w-[30px]`} />
+              <div className="flex flex-col justify-start ml-4">
+                <p className={`${styles.btnText} font-normal text-[12px]`}>View it on</p>
+                <p className={`${styles.btnText} font-bold text-[14px]`}>GitHub</p>
+              </div>
+            </div>
+            
+          </div>
+
+          <div className="mt-[2rem] flex justify-center items-center">
+            <h3 className={`${styles.blueText} font-medium`}>
+              Or open now via the Expo Go app
+            </h3>
+          </div>
+
+          <div className="mt-[1rem] flex justify-center items-center">
+            <img src={QRCode} alt="expo-icon" className="w-32 h-32" />
           </div>
 
         </div>
+
         
-
-
         {/* Hero Img */}
         <div className="h-full w-[65%]">
           <img 
