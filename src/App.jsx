@@ -12,7 +12,7 @@ const App = () => {
         <div className="w-[35%] flex-row justify-center items-center p-6 grow">
 
           {/* Logo */}
-          <div className='flex justify-start items-center space-x-2 mb-24'>
+          <div className='flex justify-start items-center space-x-2 mb-32'>
             <div className={`${styles.bgBlue} w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-tr from-[#5CA7F1] from-10% to-[#336699] to-90%`}>
               <h1 className='text-white text-xl tracking-wide font-medium'>Go</h1>
             </div>
@@ -83,21 +83,21 @@ const App = () => {
             </h3>
           </div>
 
-          <div className="mt-[1rem] flex justify-center items-center">
-            <img src={QRCode} alt="expo-icon" className="w-32 h-32" />
-          </div>
-
         </div>
 
         
         {/* Hero Img */}
-        <div className="h-full w-[65%]">
+        <div className="h-full w-[65%] relative">
           <img 
             src={HeroTori}
             alt="Hero image of red tori gate"
             className={styles.fullImg}
           />
+          <div className="absolute bottom-[5%] left-[5%]">
+            <img src={QRCode} alt="expo-icon" className="w-48 h-48 rounded-xl shadow-2xl" />
+          </div>
         </div>
+        
       </div>
     </div>
   )
