@@ -1,12 +1,19 @@
+import { useState } from 'react';
 import ReactCardCarousel from "react-card-carousel";
 
 import styles from './styles/Global';
 import { AttractionsIcon, HeroTori, HotelsIcon, RestaurantsIcon, ExpoIcon, GitHubIcon, QRCode } from "./assets";
 
 const App = () => {
+  const [isShown, setIsShown] = useState(false);
+
+  const handleClick = e => {
+    setIsShown(current => !current);
+  };
+  
   return (
     <div className={`${styles.bgBlue} ${styles.section} w-screen h-screen`}>
-      <div className={`${styles.bgWhite} w-full h-full rounded-[32px] shadow-2xl flex justify-between`}>
+      <div className={`${styles.bgWhite} w-full h-full rounded-[32px] shadow-2xl flex justify-center`}>
 
         {/* Left side panel */}
         <div className="w-[35%] flex-row justify-center items-center p-6 grow">
@@ -77,10 +84,18 @@ const App = () => {
             
           </div>
 
-          <div className="mt-[2rem] flex justify-center items-center">
+          <div className="mt-[4rem] flex justify-center items-center">
             <h3 className={`${styles.blueText} font-medium`}>
               Or open now via the Expo Go app
             </h3>
+          </div>
+
+          <div className="mt-[2rem] flex justify-center items-center">
+            <button 
+              onClick={handleClick}
+            >
+              Reveal QR Code
+            </button>
           </div>
 
         </div>
@@ -93,9 +108,12 @@ const App = () => {
             alt="Hero image of red tori gate"
             className={styles.fullImg}
           />
-          <div className="absolute bottom-[5%] left-[5%]">
-            <img src={QRCode} alt="expo-icon" className="w-48 h-48 rounded-xl shadow-2xl" />
-          </div>
+
+          {isShown && (
+            <div className="absolute bottom-[5%] left-[5%]">
+              <img src={QRCode} alt="expo-icon" className="w-48 h-48 rounded-xl shadow-2xl" />
+            </div>
+          )}
         </div>
         
       </div>
