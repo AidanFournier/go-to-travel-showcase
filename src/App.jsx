@@ -93,6 +93,7 @@ const App = () => {
           <div className="mt-[2rem] flex justify-center items-center">
             <button 
               onClick={handleClick}
+              className='bg-gradient-to-r from-[#5CA7F1] to-[#336699] to-40% text-white py-4 px-8 rounded-2xl text-xl'
             >
               Reveal QR Code
             </button>
