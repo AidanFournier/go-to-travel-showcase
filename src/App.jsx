@@ -93,10 +93,13 @@ const App = () => {
           <div className="mt-[1rem] flex justify-center items-center">
             <button 
               onClick={handleClick}
-              className='text-white bg-gradient-to-r from-[#5CA7F1] to-[#336699] hover:bg-gradient-to-bl px-8 py-4 rounded-2xl text-center hover:drop-shadow-xl transition-all scale-100 hover:scale-105 ease-in duration-300'
-              // className='bg-gradient-to-tr from-[#5CA7F1] to-[c] to-60% hover:from-[#336699] hover:to-[#5CA7F1]  py-4 px-8 c hover:drop-shadow-xl transition duration-300 ease-in-out hover:-translate-y-1'
+              className='text-white bg-gradient-to-r from-[#5CA7F1] to-[#336699] hover:bg-gradient-to-bl px-8 py-4 rounded-2xl text-center hover:drop-shadow-2xl transition-all scale-100 hover:scale-105 ease-in duration-300'
             >
-              <h1 className='text-white text-xl drop-shadow-xl'>Reveal QR Code</h1>
+              {isShown ? 
+                <h1 className='text-white text-xl drop-shadow-xl'>Hide QR Code</h1>
+                :
+                <h1 className='text-white text-xl drop-shadow-xl'>Reveal QR Code</h1>
+              }
             </button>
           </div>
 
@@ -112,8 +115,10 @@ const App = () => {
           />
 
           {isShown && (
-            <div className="absolute bottom-[5%] left-[5%] w-52 h-52 rounded-xl">
-              <img src={QRCode} alt="expo-icon" className="w-48 h-48 rounded-xl shadow-2xl" />
+            <div className="absolute bottom-[5%] left-[5%] transition-all scale-100 ease-in duration-300">
+              <div className="bg-white/25 w-52 h-52 rounded-2xl flex jusitfy-center items-center border-solid border-white">
+                <img src={QRCode} alt="expo-icon" className="w-48 h-48 m-2 rounded-xl shadow-2xl" />
+              </div>
             </div>
           )}
         </div>
