@@ -7,7 +7,7 @@ import { AttractionsIcon, HeroTori, HotelsIcon, RestaurantsIcon, ExpoIcon, GitHu
 const App = () => {
   const [isShown, setIsShown] = useState(false);
 
-  const handleClick = e => {
+  const handleClick = () => {
     setIsShown(current => !current);
   };
   
@@ -60,7 +60,26 @@ const App = () => {
           </div>
 
           {/* CTA */}
-          <div className="mt-[14rem] flex justify-center items-center space-x-3 ">
+          <div className="mt-[14rem] flex justify-center items-center">
+            <h3 className={`${styles.blueText} font-medium`}>
+              Open now via the Expo Go app
+            </h3>
+          </div>
+
+          <div className="mt-[1rem] flex justify-center items-center">
+            <button 
+              onClick={handleClick}
+              className='text-white bg-gradient-to-r from-[#5CA7F1] to-[#336699] hover:bg-gradient-to-bl px-8 py-4 rounded-2xl text-center hover:drop-shadow-2xl transition-all scale-100 hover:scale-105 ease-in duration-300'
+            >
+              {isShown ? 
+                <h1 className='text-white text-xl drop-shadow-xl'>Hide QR Code</h1>
+                :
+                <h1 className='text-white text-xl drop-shadow-xl'>Reveal QR Code</h1>
+              }
+            </button>
+          </div>
+
+          <div className="mt-[5rem] flex justify-center items-center space-x-3 ">
             <div 
               className="bg-black flex items-center justify-center py-1 px-2 rounded-md mt-2 w-fit cursor-pointer hover:shadow-lg"
               onClick={() => window.open("https://expo.dev/@aidoufou/go-to-travel?serviceType=classic&distribution=expo-go", "_blank")}
@@ -84,24 +103,7 @@ const App = () => {
             
           </div>
 
-          <div className="mt-[2rem] flex justify-center items-center">
-            <h3 className={`${styles.blueText} font-medium`}>
-              Or open now via the Expo Go app
-            </h3>
-          </div>
-
-          <div className="mt-[1rem] flex justify-center items-center">
-            <button 
-              onClick={handleClick}
-              className='text-white bg-gradient-to-r from-[#5CA7F1] to-[#336699] hover:bg-gradient-to-bl px-8 py-4 rounded-2xl text-center hover:drop-shadow-2xl transition-all scale-100 hover:scale-105 ease-in duration-300'
-            >
-              {isShown ? 
-                <h1 className='text-white text-xl drop-shadow-xl'>Hide QR Code</h1>
-                :
-                <h1 className='text-white text-xl drop-shadow-xl'>Reveal QR Code</h1>
-              }
-            </button>
-          </div>
+          
 
         </div>
 
