@@ -23,7 +23,8 @@ const styles = {
     btnText: "text-white font-IBMPlex minmd:text-lg",
   
     btnPrimary:
-      "bg-primary mt-4 py-4 px-6 text-white text-lg minmd:text-2xl font-IBMPlex font-medium rounded-lg hover:shadow-2xl",
+      "text-white bg-gradient-to-r from-[#5CA7F1] to-[#336699] hover:bg-gradient-to-bl px-8 py-4 rounded-2xl text-center hover:drop-shadow-2xl transition-all scale-100 hover:scale-105 ease-in duration-300",
+    btnPrimaryText: "text-white text-xl drop-shadow-xl",
     btnBlack:
       "bg-black flex items-center py-2 px-4 rounded-md mt-2 w-fit cursor-pointer",
 
@@ -35,6 +36,7 @@ const styles = {
       "p-4",
     
     section: "flex justify-center items-center sm:p-4",
+    sectionCenter: "flex justify-center items-center",
     subSection: "flex items-center w-full minmd:w-3/4",
     descDiv: "flex-1 w-full flex justify-start flex-col md:mb-10 ",
   
