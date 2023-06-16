@@ -2,7 +2,7 @@ import { useState } from 'react';
 import ReactCardCarousel from "react-card-carousel";
 
 import styles from './styles/Global';
-import Button from './components/Button';
+import { Button, ButtonBlack } from './components';
 import { AttractionsIcon, HeroTori, HotelsIcon, RestaurantsIcon, ExpoIcon, GitHubIcon, QRCode } from "./assets";
 
 const App = () => {
@@ -72,31 +72,20 @@ const App = () => {
             showQR={isShown}
           />
 
-          <div className="mt-[5rem] flex justify-center items-center space-x-3 ">
-            <div 
-              className="bg-black flex items-center justify-center py-1 px-2 rounded-md mt-2 w-fit cursor-pointer hover:shadow-lg"
-              onClick={() => window.open("https://expo.dev/@aidoufou/go-to-travel?serviceType=classic&distribution=expo-go", "_blank")}
-            >
-              <img src={ExpoIcon} alt="expo-icon" className={styles.btnIcon} />
-              <div className="flex flex-col justify-start ml-4">
-                <p className={`${styles.btnText} font-normal text-[10px]`}>View it on</p>
-                <p className={`${styles.btnText} font-bold text-[12px]`}>Expo Store</p>
-              </div>
-            </div>
-            <div 
-              className="bg-black flex items-center justify-center py-1 px-2 rounded-md mt-2 min-w-[6.5rem] cursor-pointer space-x-2 hover:shadow-lg"
-              onClick={() => window.open("https://github.com/AidanFournier/go-to-travel", "_blank")}
-            >
-              <img src={GitHubIcon} alt="expo-icon" className={`${styles.btnIcon} h-[20px] w-[20px]`} />
-              <div className="flex flex-col justify-start ml-4">
-                <p className={`${styles.btnText} font-normal text-[10px]`}>View it on</p>
-                <p className={`${styles.btnText} font-bold text-[12px]`}>GitHub</p>
-              </div>
-            </div>
-            
+          <div className="mt-[4rem] flex justify-center items-center space-x-3 ">
+            <ButtonBlack 
+              url={"https://expo.dev/@aidoufou/go-to-travel?serviceType=classic&distribution=expo-go"}
+              icon={ExpoIcon}
+              alt={"Expo icon"}
+              title={"Expo Store"}
+            />
+            <ButtonBlack 
+              url={"https://github.com/AidanFournier/go-to-travel"}
+              icon={GitHubIcon}
+              alt={"GitHub icon"}
+              title={"GiHub"}
+            />
           </div>
-
-          
 
         </div>
 
