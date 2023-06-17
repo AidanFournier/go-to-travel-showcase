@@ -14,21 +14,21 @@ const App = () => {
   
   return (
     <div className={`${styles.bgBlue} ${styles.section} w-screen h-screen`}>
-      <div className={`${styles.bgWhite} w-full h-full rounded-[32px] shadow-2xl flex justify-center`}>
+      <div className={`${styles.bgWhite} w-full h-full rounded-[32px] shadow-2xl flex justify-center items-center relative z-0`}>
 
         {/* Left side panel */}
-        <div className="w-[35%] flex-row justify-center items-center p-6 grow">
+        <div className="lg:w-[35%] w-2/4 lg:static flex-row justify-center items-center lg:p-6 lg:grow overflow-auto absolute z-10 bg-white/70 lg:bg-transparent max-h-[90%] lg:max-h-full rounded-[32px] p-8">
 
           {/* Logo */}
-          <div className='flex justify-start items-center space-x-2 mb-28'>
-            <div className={`${styles.bgBlue} w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-tr from-[#5CA7F1] from-10% to-[#336699] to-90%`}>
-              <h1 className='text-white text-xl tracking-wide font-medium'>Go</h1>
+          <div className='flex lg:justify-start justify-center items-center lg:space-x-2 space-x-1 lg:mb-28 mb-12'>
+            <div className={`${styles.bgBlue} lg:w-10 lg:h-10 w-8 h-8 rounded-full flex items-center justify-center bg-gradient-to-tr from-[#5CA7F1] from-10% to-[#336699] to-90%`}>
+              <h1 className='text-white lg:text-xl text-sm tracking-wide font-medium'>Go</h1>
             </div>
-            <div className={`text-xl font-bold tracking-medium ${styles.blueText}`}>To Travel</div>
+            <div className={`lg:text-xl text-sm font-bold tracking-medium ${styles.blueText} lg:text-red-600`}>To Travel</div>
           </div>
 
           {/* Tagline */}
-          <div className={`mb-28 font-bold text-2xl flex-row grow justify-center items-center text-center ${styles.blueText}`}>
+          <div className={`mb-28 font-bold lg:text-2xl text-xl flex-row grow justify-center items-center text-center ${styles.blueText}`}>
             <h2>Explore Japan.</h2>
             <h2>At your own pace.</h2>
           </div>
@@ -91,7 +91,7 @@ const App = () => {
 
         
         {/* Hero Img */}
-        <div className="h-full w-[65%] relative">
+        <div className="h-full lg:w-[65%] w-full relative">
           <img 
             src={HeroTori}
             alt="Hero image of red tori gate"

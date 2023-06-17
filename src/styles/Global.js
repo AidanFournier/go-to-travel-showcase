@@ -43,7 +43,7 @@ const styles = {
     flexCenter: "flex justify-center items-center",
     flexWrap: "flex justify-center flex-wrap",
   
-    fullImg: "w-full h-full object-cover rounded-r-[28px]",
+    fullImg: "w-full h-full object-cover rounded-[28px] lg:rounded-l-none",
     sectionImg: "w-full h-full minmd:w-11/12 minmd:h-11/12 object-contain",
     btnIcon: "w-5 h-5 minmd:w-5 minmd:h-5 object-contain",
   
