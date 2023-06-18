@@ -23,17 +23,17 @@ const styles = {
     btnText: "text-white font-IBMPlex minmd:text-lg",
   
     btnPrimary:
-      "text-white bg-gradient-to-r from-[#5CA7F1] to-[#336699] hover:bg-gradient-to-bl px-8 py-4 rounded-2xl text-center hover:drop-shadow-2xl transition-all scale-100 hover:scale-105 ease-in duration-300",
-    btnPrimaryText: "text-white text-xl drop-shadow-xl",
+      "text-white bg-gradient-to-r from-[#5CA7F1] to-[#336699] hover:bg-gradient-to-bl lg:px-8 lg:py-4 px-6 py-3 rounded-2xl text-center hover:drop-shadow-2xl transition-all scale-100 hover:scale-105 ease-in duration-300",
+    btnPrimaryText: "text-white lg:text-xl txt-m drop-shadow-xl",
     btnBlack:
       "bg-black flex items-center py-2 px-4 rounded-md mt-2 w-fit cursor-pointer",
 
     carouselContainer:
-      "relative justify-center items-center",
+      "relative justify-center items-center mb-[12rem] lg:mb-[14rem]",
     cardStyle:
-      "h-[7rem] w-[7rem] bg-[#2898DC] text-white rounded-2xl overflow-hidden flex justify-center items-center",
+      "h-[5rem] w-[5rem] lg:h-[7rem] lg:w-[7rem] bg-[#2898DC] text-white rounded-2xl overflow-hidden flex justify-center items-center",
     iconImg:
-      "p-4",
+      "lg:p-4 p-2",
     
     section: "flex justify-center items-center sm:p-4",
     sectionCenter: "flex justify-center items-center",
