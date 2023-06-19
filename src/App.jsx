@@ -17,7 +17,7 @@ const App = () => {
       <div className={`${styles.bgWhite} w-full h-full rounded-[32px] shadow-2xl flex justify-center items-center relative z-0`}>
 
         {/* Left side panel */}
-        <div className="lg:w-[35%] w-2/4 lg:static flex-row justify-center items-center lg:grow overflow-auto absolute z-10 bg-white/70 lg:bg-transparent max-h-[90%] lg:max-h-full rounded-[32px] p-6">
+        <div className="lg:w-[35%] md:w-2/4 lg:static flex-row justify-center items-center lg:grow overflow-auto absolute z-10 bg-white/70 lg:bg-transparent max-h-[90%] lg:max-h-full rounded-[32px] p-6 w-10/12">
 
           {/* Logo */}
           <div className='flex lg:justify-start justify-center items-center lg:space-x-2 space-x-1 lg:mb-28 mb-12'>
@@ -72,7 +72,13 @@ const App = () => {
             showQR={isShown}
           />
 
-          <div className="mt-[4rem] flex justify-center items-center space-x-3 ">
+          <div className="flex justify-center items-center mt-[2rem] lg:hidden">
+            <h3 className={`${styles.blueText} font-medium md:text-lg text-sm text-center`}>
+              Or view it on
+            </h3>
+          </div>
+
+          <div className="lg:mt-[3rem] mt-[0.5rem] flex justify-center items-center space-x-3 ">
             <ButtonBlack 
               url={"https://expo.dev/@aidoufou/go-to-travel?serviceType=classic&distribution=expo-go"}
               icon={ExpoIcon}

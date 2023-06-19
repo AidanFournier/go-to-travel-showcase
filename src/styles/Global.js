@@ -45,7 +45,7 @@ const styles = {
   
     fullImg: "w-full h-full object-cover rounded-[28px] lg:rounded-l-none",
     sectionImg: "w-full h-full minmd:w-11/12 minmd:h-11/12 object-contain",
-    btnIcon: "w-5 h-5 minmd:w-5 minmd:h-5 object-contain",
+    btnIcon: "lg:w-5 lg:h-5 lg:minmd:w-5 lg:minmd:h-5 w-4 h-4 object-contain",
   
     featureImg: "w-20 h-20 minlg:w-40 minlg:h-40 object-contain mb-1",
     featureText:
