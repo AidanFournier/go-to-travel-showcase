@@ -4,7 +4,7 @@ import styles from '../styles/Global';
 const ButtonBlack = ({ url, icon, alt, title }) => {
   return (
     <div 
-        className="bg-black flex items-center justify-center lg:py-1 lg:px-2 py-2 rounded-md mt-2 min-w-[6.5rem] cursor-pointer hover:shadow-xl"
+        className="bg-black flex items-center justify-center lg:py-1 lg:px-2 py-2 rounded-md mt-2 mb-4 min-w-[6.5rem] cursor-pointer hover:shadow-xl"
         onClick={() => window.open({url}, "_blank")}
     >
         <img src={icon} alt={alt} className={styles.btnIcon} />
