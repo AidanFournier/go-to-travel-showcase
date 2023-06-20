@@ -3,7 +3,7 @@ import styles from '../styles/Global';
 // eslint-disable-next-line react/prop-types
 const Button = ({ handleClick, showQR }) => {
   return (
-    <div className={`lg:mt-[2rem] mt-[1rem] ${styles.sectionCenter}`}>
+    <div className={`lg:mt-[2rem] mt-[1rem] ${styles.flexCenter}`}>
       <button 
         onClick={handleClick}
         className={styles.btnPrimary}
