@@ -13,18 +13,18 @@ const App = () => {
   };
   
   return (
-    <div className={`${styles.bgBlue} ${styles.section} w-screen h-screen`}>
-      <div className={`${styles.bgWhite} w-full h-full rounded-[32px] shadow-2xl flex justify-center`}>
+    <div className={`${styles.bgBlue} ${styles.section} w-screen h-screen sm:p-4`}>
+      <div className={`${styles.bgWhite} w-full h-full md:rounded-[32px] shadow-2xl flex justify-center items-center relative z-0`}>
 
         {/* Left side panel */}
-        <div className="w-[35%] flex-row justify-center items-center p-6 grow">
+        <div className="lg:w-[35%] lg:static flex-row justify-center items-center lg:justify-start lg:grow overflow-auto absolute z-10 bg-white/70 lg:bg-transparent lg:h-full rounded-[32px] p-6 w-10/12">
 
           {/* Logo */}
-          <div className='flex justify-start items-center space-x-2 mb-28'>
-            <div className={`${styles.bgBlue} w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-tr from-[#5CA7F1] from-10% to-[#336699] to-90%`}>
-              <h1 className='text-white text-xl tracking-wide font-medium'>Go</h1>
+          <div className='flex lg:justify-start justify-center items-center space-x-2 lg:mb-28 mb-20'>
+            <div className={`${styles.bgBlue} lg:w-10 lg:h-10 w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-tr from-[#5CA7F1] from-10% to-[#336699] to-90%`}>
+              <h1 className='text-white lg:text-xl text-xl tracking-wide font-medium'>Go</h1>
             </div>
-            <div className={`text-xl font-bold tracking-medium ${styles.blueText}`}>To Travel</div>
+            <div className={`lg:text-xl text-xl font-bold tracking-medium ${styles.blueText}`}>To Travel</div>
           </div>
 
           {/* Tagline */}
@@ -61,8 +61,8 @@ const App = () => {
           </div>
 
           {/* CTA */}
-          <div className="mt-[14rem] flex justify-center items-center">
-            <h3 className={`${styles.blueText} font-medium`}>
+          <div className="flex justify-center items-center">
+            <h3 className={`${styles.blueText} font-medium md:text-lg text-sm text-center`}>
               Open now via the Expo Go app
             </h3>
           </div>
@@ -72,7 +72,13 @@ const App = () => {
             showQR={isShown}
           />
 
-          <div className="mt-[4rem] flex justify-center items-center space-x-3 ">
+          <div className="flex justify-center items-center mt-[2rem] lg:hidden">
+            <h3 className={`${styles.blueText} font-medium md:text-lg text-sm text-center`}>
+              Or view it on
+            </h3>
+          </div>
+
+          <div className="lg:mt-[3rem] mt-[0.5rem] flex justify-center items-center space-x-3 ">
             <ButtonBlack 
               url={"https://expo.dev/@aidoufou/go-to-travel?serviceType=classic&distribution=expo-go"}
               icon={ExpoIcon}
@@ -91,7 +97,7 @@ const App = () => {
 
         
         {/* Hero Img */}
-        <div className="h-full w-[65%] relative">
+        <div className="h-full lg:w-[65%] w-full relative">
           <img 
             src={HeroTori}
             alt="Hero image of red tori gate"
@@ -99,9 +105,9 @@ const App = () => {
           />
 
           {isShown && (
-            <div className="absolute bottom-[5%] left-[5%] transition-all scale-100 ease-in duration-300">
-              <div className="bg-white/25 w-52 h-52 rounded-2xl flex jusitfy-center items-center border-solid border-white">
-                <img src={QRCode} alt="expo-icon" className="w-48 h-48 m-2 rounded-xl shadow-2xl" />
+            <div className="absolute transition-all scale-100 ease-in duration-300 z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <div className="bg-white/25 w-56 h-56 rounded-2xl flex jusitfy-center items-center border-solid border-white">
+                <img src={QRCode} alt="expo-icon" className="w-52 h-52 m-2 rounded-xl shadow-2xl" />
               </div>
             </div>
           )}
