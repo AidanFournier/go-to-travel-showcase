@@ -29,7 +29,7 @@ const styles = {
       "bg-black flex items-center py-2 px-4 rounded-md mt-2 w-fit cursor-pointer",
 
     carouselContainer:
-      "relative justify-center items-center mb-[14rem]",
+      "relative justify-center items-center mb-[16rem]",
     cardStyle:
       "h-[8rem] w-[8rem] lg:h-[7rem] lg:w-[7rem] bg-[#2898DC] text-white rounded-2xl overflow-hidden flex justify-center items-center",
     iconImg:

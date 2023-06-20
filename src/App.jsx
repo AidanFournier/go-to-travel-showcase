@@ -105,9 +105,9 @@ const App = () => {
           />
 
           {isShown && (
-            <div className="absolute bottom-[5%] left-[5%] transition-all scale-100 ease-in duration-300">
-              <div className="bg-white/25 w-52 h-52 rounded-2xl flex jusitfy-center items-center border-solid border-white">
-                <img src={QRCode} alt="expo-icon" className="w-48 h-48 m-2 rounded-xl shadow-2xl" />
+            <div className="absolute transition-all scale-100 ease-in duration-300 z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <div className="bg-white/25 w-56 h-56 rounded-2xl flex jusitfy-center items-center border-solid border-white">
+                <img src={QRCode} alt="expo-icon" className="w-52 h-52 m-2 rounded-xl shadow-2xl" />
               </div>
             </div>
           )}
