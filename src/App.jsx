@@ -13,22 +13,22 @@ const App = () => {
   };
   
   return (
-    <div className={`${styles.bgBlue} ${styles.section} w-screen h-screen sm:p-4`}>
-      <div className={`${styles.bgWhite} w-full h-full md:rounded-[32px] shadow-2xl flex justify-center items-center relative z-0`}>
+    <div className={`${styles.bgBlue} ${styles.flexCenter} w-screen h-screen sm:p-4`}>
+      <div className={`${styles.bgWhite} ${styles.flexCenter} w-full h-full md:${styles.rounded} shadow-2xl relative z-0`}>
 
         {/* Left side panel */}
-        <div className="lg:w-[35%] lg:static flex-row justify-center items-center lg:justify-start lg:grow overflow-auto absolute z-10 bg-white/70 lg:bg-transparent lg:h-full rounded-[32px] p-6 w-10/12">
+        <div className={`${styles.flexRowCenter} ${styles.rounded} ${styles.panelContainer}`}>
 
           {/* Logo */}
-          <div className='flex lg:justify-start justify-center items-center space-x-2 lg:mb-28 mb-20'>
-            <div className={`${styles.bgBlue} lg:w-10 lg:h-10 w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-tr from-[#5CA7F1] from-10% to-[#336699] to-90%`}>
-              <h1 className='text-white lg:text-xl text-xl tracking-wide font-medium'>Go</h1>
+          <div className={`${styles.flexCenter} lg:justify-start space-x-2 lg:mb-28 mb-20`}>
+            <div className={`${styles.bgTrGrad} ${styles.flexCenter} lg:w-10 lg:h-10 w-12 h-12 rounded-full`}>
+              <h1 className={`${styles.whiteText} ${styles.largeText} tracking-wide`}>Go</h1>
             </div>
-            <div className={`lg:text-xl text-xl font-bold tracking-medium ${styles.blueText}`}>To Travel</div>
+            <div className={`${styles.blueText} text-xl font-bold tracking-medium ${styles.blueText}`}>To Travel</div>
           </div>
 
           {/* Tagline */}
-          <div className={`mb-28 font-bold text-2xl flex-row grow justify-center items-center text-center ${styles.blueText}`}>
+          <div className={`${styles.blueText} ${styles.flexRowCenter} ${styles.xlText} mb-28 grow`}>
             <h2>Explore Japan.</h2>
             <h2>At your own pace.</h2>
           </div>
@@ -61,8 +61,8 @@ const App = () => {
           </div>
 
           {/* CTA */}
-          <div className="flex justify-center items-center">
-            <h3 className={`${styles.blueText} font-medium md:text-lg text-sm text-center`}>
+          <div className={`${styles.flexCenter}`}>
+            <h3 className={`${styles.blueText} ${styles.largeText}`}>
               Open now via the Expo Go app
             </h3>
           </div>
@@ -72,13 +72,13 @@ const App = () => {
             showQR={isShown}
           />
 
-          <div className="flex justify-center items-center mt-[2rem] lg:hidden">
-            <h3 className={`${styles.blueText} font-medium md:text-lg text-sm text-center`}>
+          <div className={`${styles.flexCenter} mt-[2rem] lg:hidden`}>
+            <h3 className={`${styles.blueText} ${styles.largeText}`}>
               Or view it on
             </h3>
           </div>
 
-          <div className="lg:mt-[3rem] mt-[0.5rem] flex justify-center items-center space-x-3 ">
+          <div className={`${styles.flexCenter} lg:mt-[3rem] mt-[0.5rem] space-x-3`}>
             <ButtonBlack 
               url={"https://expo.dev/@aidoufou/go-to-travel?serviceType=classic&distribution=expo-go"}
               icon={ExpoIcon}
@@ -92,9 +92,7 @@ const App = () => {
               title={"GiHub"}
             />
           </div>
-
         </div>
-
         
         {/* Hero Img */}
         <div className="h-full lg:w-[65%] w-full relative">
@@ -105,14 +103,13 @@ const App = () => {
           />
 
           {isShown && (
-            <div className="absolute transition-all scale-100 ease-in duration-300 z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <div className="bg-white/25 w-56 h-56 rounded-2xl flex jusitfy-center items-center border-solid border-white">
-                <img src={QRCode} alt="expo-icon" className="w-52 h-52 m-2 rounded-xl shadow-2xl" />
+            <div className={`${styles.absoluteContainerCenter}`}>
+              <div className={`${styles.flexCenter} bg-white/25 w-56 h-56 rounded-2xl border-solid border-white`}>
+                <img src={QRCode} alt="expo-icon" className={`w-52 h-52 m-2 rounded-xl shadow-2xl`}/>
               </div>
             </div>
           )}
         </div>
-        
       </div>
     </div>
   )
