@@ -14,7 +14,7 @@ const App = () => {
   
   return (
     <div className={`${styles.bgBlue} ${styles.flexCenter} w-screen h-screen sm:p-4`}>
-      <div className={`${styles.bgWhite} ${styles.flexCenter} w-full h-full md:${styles.rounded} shadow-2xl relative z-0`}>
+      <div className={`${styles.bgWhite} ${styles.flexCenter} w-full h-full ${styles.rounded} shadow-2xl relative z-0`}>
 
         {/* Left side panel */}
         <div className={`${styles.flexRowCenter} ${styles.rounded} ${styles.panelContainer}`}>
