@@ -26,11 +26,11 @@ const App = () => {
             </div> */}
             <img
               src={LogoPin}
-              className={`${styles.flexCenter} lg:w-10 lg:h-10 w-12 h-12 absolute -bottom-2.5 z-10`}
+              className={`${styles.flexCenter} w-10 h-10 absolute lg:-bottom-3 lg:-left-0.5 z-10`}
             >
             </img>
-            <h1 className={`${styles.whiteText} ${styles.largeText} tracking-wide z-20 pl-0.5`}>Go</h1>
-            <div className={`${styles.blueText} text-lg font-bold tracking-medium`}>To Travel</div>
+            <h1 className={`${styles.whiteText} lg:pr-1 z-20`}>Go</h1>
+            <h1 className={`${styles.blueText}`}>To Travel</h1>
           </div>
 
           {/* Tagline */}
