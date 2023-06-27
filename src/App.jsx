@@ -3,7 +3,7 @@ import ReactCardCarousel from "react-card-carousel";
 
 import styles from './styles/Global';
 import { Button, ButtonBlack } from './components';
-import { AttractionsIcon, HeroTori, HotelsIcon, RestaurantsIcon, ExpoIcon, GitHubIcon, QRCode } from "./assets";
+import { AttractionsIcon, HeroTori, HotelsIcon, RestaurantsIcon, ExpoIcon, GitHubIcon, QRCode, LogoPin } from "./assets";
 
 const App = () => {
   const [isShown, setIsShown] = useState(false);
@@ -20,11 +20,17 @@ const App = () => {
         <div className={`${styles.flexRowCenter} ${styles.rounded} ${styles.panelContainer}`}>
 
           {/* Logo */}
-          <div className={`${styles.flexCenter} lg:justify-start space-x-2 lg:mb-28 mb-20`}>
-            <div className={`${styles.bgTrGrad} ${styles.flexCenter} lg:w-10 lg:h-10 w-12 h-12 rounded-full`}>
+          <div className={`${styles.flexCenter} lg:justify-start space-x-2 lg:mb-28 mb-20 relative`}>
+            {/* <div className={`${styles.bgTrGrad} ${styles.flexCenter} lg:w-10 lg:h-10 w-12 h-12 rounded-full`}>
               <h1 className={`${styles.whiteText} ${styles.largeText} tracking-wide`}>Go</h1>
-            </div>
-            <div className={`${styles.blueText} text-xl font-bold tracking-medium ${styles.blueText}`}>To Travel</div>
+            </div> */}
+            <img
+              src={LogoPin}
+              className={`${styles.flexCenter} lg:w-10 lg:h-10 w-12 h-12 absolute -bottom-2.5 z-10`}
+            >
+            </img>
+            <h1 className={`${styles.whiteText} ${styles.largeText} tracking-wide z-20 pl-0.5`}>Go</h1>
+            <div className={`${styles.blueText} text-lg font-bold tracking-medium`}>To Travel</div>
           </div>
 
           {/* Tagline */}

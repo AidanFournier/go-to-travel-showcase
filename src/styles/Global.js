@@ -7,7 +7,7 @@ const styles = {
   bgTrGrad: "bg-gradient-to-tr from-[#5CA7F1] from-10% to-[#336699] to-90%",
 
   largeText:
-    "text-xl font-medium",
+    "text-lg font-medium",
   xlText:
     "font-bold text-2xl text-center",
   btnText: "text-white font-normal text-[10px] hidden lg:block",

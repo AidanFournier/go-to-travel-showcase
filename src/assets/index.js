@@ -1,3 +1,4 @@
+import LogoPin from "./logo-pin-big.png";
 import ExpoIcon from "./expo.png";
 import GitHubIcon from "./github.png";
 import QRCode from "./qr-code.svg";
@@ -7,6 +8,7 @@ import AttractionsIcon from "./icon-attractions.png";
 import RestaurantsIcon from "./icon-restaurants.png";
 
 export {
+    LogoPin,
     ExpoIcon,
     GitHubIcon,
     QRCode,
