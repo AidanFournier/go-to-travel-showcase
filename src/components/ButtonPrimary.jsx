@@ -6,7 +6,7 @@ const Button = ({ handleClick, showQR }) => {
     <div className={`lg:mt-[2rem] mt-[1rem] ${styles.flexCenter}`}>
       <button 
         onClick={handleClick}
-        className={styles.btnPrimary}
+        className={`${styles.btnPrimary} ${styles.roundedFull}`}
       >
         {showQR ? 
           <h1 className={styles.btnPrimaryText}>Hide QR Code</h1>
