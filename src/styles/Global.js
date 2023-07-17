@@ -14,7 +14,7 @@ const styles = {
   btnTextBold: "text-white lg:font-bold lg:text-[12px] text-xs",
 
   btnPrimary:
-    "text-white bg-gradient-to-r from-[#2CADCC] to-[#336699] hover:bg-gradient-to-bl lg:px-14 lg:py-4 px-10 py-3 rounded-2xl text-center hover:drop-shadow-2xl transition-all scale-100 hover:scale-105 ease-in duration-300",
+    "text-white bg-gradient-to-r from-[#80BEED] to-[#336699] hover:bg-gradient-to-bl lg:px-14 lg:py-4 px-10 py-3 rounded-2xl text-center hover:drop-shadow-2xl transition-all scale-100 hover:scale-105 ease-in duration-300",
   btnPrimaryText: "text-white text-lg drop-shadow-xl",
   btnBlack:
     "bg-black flex items-center justify-center lg:py-1 lg:px-2 py-2 rounded-md mt-2 mb-4 min-w-[6.5rem] cursor-pointer hover:shadow-xl",
@@ -22,7 +22,7 @@ const styles = {
   carouselContainer:
     "relative justify-center items-center mb-[16rem]",
   cardStyle:
-    "h-[8rem] w-[8rem] lg:h-[7rem] lg:w-[7rem] bg-[#2CADCC] text-white rounded-2xl overflow-hidden flex justify-center items-center",
+    "h-[8rem] w-[8rem] lg:h-[7rem] lg:w-[7rem] bg-[#80BEED] text-white rounded-2xl overflow-hidden flex justify-center items-center",
   iconImg:
     "lg:p-4 p-2",
   
