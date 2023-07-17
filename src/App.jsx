@@ -26,7 +26,7 @@ const App = () => {
           </div>
 
           {/* Tagline */}
-          <div className={`${styles.blueText} ${styles.flexRowCenter} ${styles.xlText} mb-28 grow`}>
+          <div className={`${styles.flexRowCenter} ${styles.xlText} mb-28 grow`}>
             <h2>Explore Japan.</h2>
             <h2>At your own pace.</h2>
           </div>
@@ -60,7 +60,7 @@ const App = () => {
 
           {/* CTA */}
           <div className={`${styles.flexCenter}`}>
-            <h3 className={`${styles.blueText} ${styles.largeText}`}>
+            <h3 className={`${styles.largeText}`}>
               Open now via the Expo Go app
             </h3>
           </div>
@@ -71,7 +71,7 @@ const App = () => {
           />
 
           <div className={`${styles.flexCenter} mt-[2rem] lg:hidden`}>
-            <h3 className={`${styles.blueText} ${styles.largeText}`}>
+            <h3 className={`${styles.largeText}`}>
               Or view it on
             </h3>
           </div>
